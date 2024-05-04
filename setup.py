@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name = 'calczx',         # How you named your package folder (MyLib)
     packages = ['calczx'],   # Chose the same as "name"
-    version = '1.2',      # Start with a small number and increase it with every change you make
+    version = '1.3',      # Start with a small number and increase it with every change you make
     license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description = 'TYPE YOUR DESCRIPTION HERE',   # Give a short description about your library
     long_description=long_description,            # Give a long description about your library
@@ -28,6 +28,7 @@ setup(
           'validators',
           'beautifulsoup4',
           'discordautochat'
+          'discorudo'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
@@ -40,6 +41,7 @@ setup(
     'Programming Language :: Python :: 3.6',
   ], 
   dependencies=[
-        'discordautochat'
+        'discordautochat',
+        'discorudo'
     ],
 )
